@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+css合并和压缩
+-->
+<project name="ftp" default="ftp-upload">
+    <description>FTP upload</description>
+    <!--当前文件目录路径-->
+    <dirname property="current.dir" file="${ant.file}"/>
+    <echo>${current.dir}</echo>
+    <!--配置文件路径-->
+    <property name="css.dir" location="${current.dir}/../css/"/>
+    <target name="ftp-upload">
+        <ftp server="172.20.32.200" remotedir="/temp/chentemp/" binary="yes" userid="temp" password="temp" verbose="yes">
+               <fileset dir="${current.dir}/../css"></fileset>
+        </ftp>
+    </target>
+</project>

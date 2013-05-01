@@ -1,0 +1,30 @@
+/*
+layout.css
+*/
+
+/*
+html基础骨架
+*/
+#css{padding-left:210px; background:white}
+#slide{width:210px; height:100%; margin-left:-210px; position:fixed; background:url(../images/pattern.jpg) repeat}
+#main{width:100%}
+.content{padding:0px 24px}
+
+/*
+侧边栏骨架
+*/
+#slide .hd{width:100%; height:48px; cursor:pointer; line-height:48px; background:#666;text-indent:12px; font-size:18px;color:white}
+#slide .bd h2{width:100%; height:36px; line-height:36px; cursor:pointer; text-indent:12px; background:#fff88a; font-size:14px; border-bottom:solid 1px #d1c400}
+#slide .bd ol{padding:0 12px; display:none}
+#slide .bd ol li{width:100%; border-bottom:dotted 1px #ccc}
+#slide .bd ol li a{display:inline-block; width:100%; height:32px; line-height:32px}
+
+/*
+内容区骨架
+*/
+#main .bd h2{margin:24px 0 4px; font-size:14px}
+.content .bd h3{margin:16px 0 4px; font-size:13px}
+.content .bd h4{margin:12px 0 4px; font-size:12px}
+.content .hd{width:100%; height:47px; font-weight:bold; line-height:47px; font-size:18px; border-bottom:solid 1px #999}
+.content .bd{margin-top:-16px}
+.content .bd .container{padding-left:24px}

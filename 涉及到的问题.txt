@@ -1,0 +1,5 @@
+1. 页面高度自适应问题
+2. base初始值设置 body{font:13px/1.231 arial,helvetica,clean,sans-serif}
+3. 几种常见布局
+4. div为空时内部有line-height占高问题
+5. 表格border为1

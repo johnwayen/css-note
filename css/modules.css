@@ -1,0 +1,38 @@
+/*
+modules.css
+*/
+
+/*
+public-module
+*/
+
+/*--------------module-causeBox---------------*/
+.causeBox{padding:12px; border:solid 4px #fff88a; background:#fffcc2}
+.causeBox p span{color:red;}
+.causeBox p a{text-decoration:underline}
+
+/*--------------module-demo---------------*/
+.demoBox{border:solid 4px #ccc}
+.demoBox .block{width:100%; height:100px; line-height:100px; text-align:center;display:inline; float:left}
+
+/*
+css-module-demo
+*/
+
+/*--------------module-demo-fluid---------------*/
+.demoFluid{padding:0 240px 0 120px}
+.demoFluid-nav{width:120px; margin-left:-120px}
+.demoFluid-main{width:100%}
+.demoFluid-extra{width:240px; margin-right:-240px}
+
+/*--------------module-blockElementVertical---------------*/
+.verticalDemo{display:table-cell; vertical-align:middle; *position:relative; height:100px}
+.verticalWrap{*position:absolute; *top:50%}
+.vertical{*position:relative; *top:-50%}
+
+/*--------------module-pageFrom---------------*/
+.pageFrom ul li{list-style:square}
+.pageFrom ul li a:hover{text-decoration:underline}
+.pageFrom ul{padding-left:16px}
+
+.defaultTable td{border:solid 1px red}

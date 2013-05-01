@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+css合并和压缩
+-->
+<project name="css-learn" default="css">
+    <description>CSS Build File</description>
+    <!--当前文件目录路径-->
+    <dirname property="current.dir" file="${ant.file}"/>
+    <echo>${current.dir}</echo>
+    <!--配置文件路径-->
+    <property file="build.properties"/>
+    <property name="css.dir" location="${current.dir}/../css/"/>
+
+    <!--yuicompressor程序路径-->
+    <property name="yuicompressor.path" location="${current.dir}/../../../../soft/yuicompressor/yuicompressor.jar"/>
+    <property name="closure.path" location="${current.dir}/../../../../soft/closure-compiler/compiler.jar"/>
+    <echo>yuicompressor路径：${yuicompressor.path}</echo>
+    <!--合并css-->
+    <target name="combine-css">
+        <concat destfile="${css.dir}/all.css"  encoding="utf8" outputencoding="utf8">
+                <path path="${css.dir}/base.css"></path>
+                <path path="${css.dir}/yui_grids.css"></path>
+                <path path="${css.dir}/layout.css"></path>
+                <path path="${css.dir}/modules.css"></path>
+                <path path="${css.dir}/state.css"></path>
+        </concat>
+    </target>
+
+    <target name="minify-css">
+        <apply executable="java" verbose="true" dest="${css.dir}/"   failonerror="true" parallel="false">
+            <fileset dir="${css.dir}" includes="all.css"/>
+            <arg line="-jar"/>
+            <arg path="${yuicompressor.path}"/>
+            <arg line="--charset gbk"/>
+            <arg value="--type"/>
+            <arg value="css"/>
+            <arg value="-o"/>
+            <targetfile/>
+            <mapper type="glob" from="*.css" to="*-min.css"/>
+        </apply>
+    </target>
+
+    <target name="delete-css">
+        <delete verbose="true">
+            <fileset dir="${css.dir}/" includes="all.css,all-min.css"></fileset>
+        </delete>
+    </target>
+
+    <target name="get-index">
+        <get src="http://www.36ria.com/" dest="${css.dir}/36ria-index.html" verbose="true" usetimestamp="true"/>
+    </target>
+</project>

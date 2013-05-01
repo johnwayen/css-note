@@ -1,0 +1,153 @@
+/*-------------YUI3 reset--------------*/
+/**
+* YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+* http://cssreset.com
+* Copyright 2012 Yahoo! Inc. All rights reserved.
+* http://yuilibrary.com/license/
+*/
+html{
+color:#000;
+background:#FFF;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+margin:0;
+padding:0;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+fieldset,img {
+border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+font-style:normal;
+font-weight:normal;
+}
+ol,ul {
+list-style:none;
+}
+caption,th {
+text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+font-size:100%;
+font-weight:normal;
+}
+q:before,q:after {
+content:'';
+}
+abbr,acronym {
+border:0;
+font-variant:normal;
+}
+sup {
+vertical-align:text-top;
+}
+sub {
+vertical-align:text-bottom;
+}
+input,textarea,select {
+font-family:inherit;
+font-size:inherit;
+font-weight:inherit;
+}
+input,textarea,select {
+*font-size:100%;
+}
+legend {
+color:#000;
+}
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset { display: none; }
+	
+	
+/*-------------baseStyle--------------*/
+body{font:12px/1.8 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}
+
+/* 文字排版 */
+.f12{font-size:12px}
+.f13{font-size:13px}
+.f14{font-size:14px}
+.f16{font-size:16px}
+.f18{font-size:18px}
+.f20{font-size:20px}
+.fb{font-weight:bold}
+.fn{font-weight:normal}
+.t2{text-indent:2em}
+.unl{text-decoration:underline}
+.noUnl{text-decoration:none}
+
+/* 定位 */
+.l{float:left; display:inline}
+.r{float:right; display:inline}
+.bc{margin-left:auto; margin-right:auto}
+.tc{text-align:center}
+.tl{text-align:left}
+.tr{text-align:right}
+.cb{clear:both}
+.cl{clear:left}
+.cr{clear:right}
+.vm{vertical-align:middle}
+.pr{position:relative}
+.pa{position:absolute}
+.zoom{zoom:1}
+.hidden{visibility:hidden}
+.none{display:none}
+
+/* 清除浮动 */
+.clearfix:after {content: "."; display: block; height:0; clear: both; visibility:hidden;}
+.clearfix {display:inline-block;}
+/*  Hides from IE-mac  */
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;} 
+/*  End hide from IE-mac */
+
+.bfc{zoom:1; overflow:hidden}
+
+.p12{padding:12px}
+.p20{padding:20px}
+.p50{padding:50px}
+
+/* 颜色 */
+.red{color:red}
+.blue{color:blue}
+.black{color:black}
+.bg_red{background:red}
+.bg_blue{background:blue}
+.bg_black{background:black}
+.bg_white{background:white}
+.gray_light{background:#d0d0d0}
+.gray_ccc{background:#ccc}
+.gray{background:#666}
+.gray_dark{background:#333}
+
+html{background:#999}
+body{color:#666; background:#c0c0c0}
+a{color:#666; text-decoration:none}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
